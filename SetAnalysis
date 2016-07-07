@@ -1,0 +1,25 @@
+Este documento contém algumas expressões simples do conceito de Set Analysis do Qlikview. 
+A intenção é que todos contribuam para que possamos ter um documento centralizado desta ferramenta muito utilizada.
+
+1. Calcular uma operação de soma, contagem, etc. baseada nas seleções atuais.
+  Operação({$} Quantidade)
+  
+2. Calculo geral. Ignorando as seleções atuais.
+  Operação({1} Quantidade)
+  
+3. Calculo baseado em um identificador.
+  Operação({Identificador} Quantidade)
+  
+4. Calculo baseado inversamente à seleção atual.
+  Operação({1-$} Quantidade)
+  
+5. Calculo baseado na seleção anterior.
+  Operação({$1} Quantidade)
+  
+6. Calculo baseado na próxima seleção.
+  Operação({$_1} Quantidade)
+  
+7. Calculo de operação baseada em resolução de expressões (seleções atuais).
+  Operação({$} Quantidade*PrecoProduto)
+
+
